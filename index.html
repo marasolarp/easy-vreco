@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Easy Vreco</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12 container">
+					<h1 class="text-center">Busca tu Ruta</h1>
+				</div>	
+			</div>				
+			<nav class="navbar navbar-inverse head center-block">
+		  		<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<div class="form-group">
+								<input type="text" id="punto-partida" class="form-control text-center" placeholder="Introduce una ubicacion">
+							</div>	
+						</div>
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<div class="form-group">
+								<input type="text" id="punto-destino" class="form-control text-center" placeholder="Introduce una ubicacion">
+							</div>	
+						</div>
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<button type="submit" id="trazar-ruta" class="btn btn-default text-center">Trazar Ruta</button>
+						</div>
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<button type="submit" id="encuentrame" class="btn btn-default text-center">Encuentrame</button>
+						</div>
+					</div>
+			   </div>
+			</nav>
+		</div>
+		
+	</header>
+	<section>
+		<div class="container"><div class="row">
+			<div class="col-md-12 col-sm-12 col-xs-12" id="map"></div>
+			</div>
+		</div>
+	</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmR2L6h3wXZ2L0VLeTP7IHK7507cFrWVE&callback=initMap&libraries=places"
+    async defer></script>
+	<script src="assets/js/app.js"></script>
+</body>
+</html>
