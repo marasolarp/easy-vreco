@@ -7,10 +7,11 @@ function initMap() {
 		zoom: 3,// acercamiento del mapa
 		center: laboratoriaLima //ubicacion en la que se centrra el mapa
 	});
-
+	var imagen = 'https://image.flaticon.com/icons/png/128/130/130276.png';
 	var markadorLaboratoria = new google.maps.Marker ({
 		position: laboratoriaLima,//indica el lugar donde se pondra el marcador
-		map: map //se indica el mapa en el que aparecera el marcador
+		map: map, //se indica el mapa en el que aparecera el marcador
+		icon: imagen
 	});	
 	
 
