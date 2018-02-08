@@ -29,7 +29,8 @@ var funcionExito = function(posicion) {
 
 	var miUbicacion = new google.maps.Marker ({
 		position: {lat:latitud, lng:longitud},
-		map: map
+		map: map,
+		icon:imagen
 	});
 		map.setZoom(18);
 		map.setCenter({lat:latitud, lng:longitud});// asignmos un nuevo centro del mapa
